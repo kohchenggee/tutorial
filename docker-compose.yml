@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  # React App
+  web-be:
+    extends:
+      file: docker-compose.base.yml
+      service: nx-app-base
+    command: npx nx serve web-be
+    environment:
+      - HOST=0.0.0.0
+    ports:
+      - 3000:3000
+    networks:
+      - default
+
+  # React App
+  web-fe:
+    extends:
+      file: docker-compose.base.yml
+      service: nx-app-base
+    command: npx prisma generate && nx serve web-fe
+    environment:
+      - NEXT_PUBLIC_NX_API_URL=http://localhost:3000
+    ports:
+      - 4300:4200
+    networks:
+      - default
+volumes:
+  mono-node-modules: null

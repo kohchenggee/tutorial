@@ -1,8 +1,4 @@
-
 import styles from './page.module.css';
-import { GET } from './api/hello/route';
-import ApiResponse from './api-test';
-import Link from 'next/link';
 
 export default function Index() {
   /*
@@ -10,7 +6,6 @@ export default function Index() {
    *
    * Note: The corresponding styles are in the ./index.css file.
    */
-
   return (
     <div className={styles.page}>
       <div className="wrapper">
@@ -18,13 +13,11 @@ export default function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome web-fe 👋
-              {process.env.NEXT_PUBLIC_NX_API_URL}
+              Welcome gptgenius 👋
             </h1>
           </div>
-          <ApiResponse />
-          <Link href="/query">Query Page</Link>
-          {/* <div id="hero" className="rounded">
+
+          <div id="hero" className="rounded">
             <div className="text-container">
               <h2>
                 <svg
@@ -404,7 +397,7 @@ export default function Index() {
                 </svg>
                 View project details
               </summary>
-              <pre>nx show project web-fe --web</pre>
+              <pre>nx show project gptgenius --web</pre>
             </details>
             <details>
               <summary>
@@ -468,7 +461,7 @@ export default function Index() {
                 d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
               />
             </svg>
-          </p> */}
+          </p>
         </div>
       </div>
     </div>

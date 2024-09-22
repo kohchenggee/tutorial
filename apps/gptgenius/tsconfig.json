@@ -26,8 +26,8 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
-    "../../apps/web-fe/.next/types/**/*.ts",
-    "../../dist/apps/web-fe/.next/types/**/*.ts",
+    "../../apps/gptgenius/.next/types/**/*.ts",
+    "../../dist/apps/gptgenius/.next/types/**/*.ts",
     "next-env.d.ts",
     ".next/types/**/*.ts"
   ],
