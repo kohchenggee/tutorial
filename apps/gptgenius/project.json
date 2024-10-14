@@ -4,7 +4,6 @@
   "sourceRoot": "apps/gptgenius",
   "projectType": "application",
   "tags": [],
-  "// targets": "to see all targets run: nx show project gptgenius --web",
   "targets": {
     "build": {
       "executor": "@nx/next:build",
