@@ -1,5 +1,5 @@
 import { UserProfile, auth } from '@clerk/nextjs';
-import { fetchUserTokensById } from 'apps/gptgenius/utils/action';
+import { fetchUserTokensById } from '../../../../utils/action';
 
 const ProfilePage = async () => {
   const { userId } = auth();

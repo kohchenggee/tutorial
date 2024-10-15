@@ -10,8 +10,8 @@ const links = [
 const NavLinks = () => {
   return (
     <div className="menu text-base-content">
-      {links.map((link) => {
-        return <Link className={`p-2 hover:bg-sky-200`} href={link.href}>{link.label}</Link>;
+      {links.map((link,index) => {
+        return <Link key={`${index}_${link.label}`} className={`p-2 hover:bg-sky-200`} href={link.href}>{link.label}</Link>;
       })}
     </div>
   );

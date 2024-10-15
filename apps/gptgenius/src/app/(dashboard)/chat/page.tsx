@@ -3,7 +3,7 @@ import {
   QueryClient,
   dehydrate,
 } from '@tanstack/react-query';
-import Chat from 'apps/gptgenius/components/Chat';
+import Chat from '../../../../components/Chat';
 
 const ChatPage = () => {
   const queryClient = new QueryClient();

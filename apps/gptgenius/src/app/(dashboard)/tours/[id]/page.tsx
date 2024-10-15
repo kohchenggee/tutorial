@@ -1,7 +1,7 @@
 import TourInfo, {
   TourResponseObject,
-} from 'apps/gptgenius/components/TourInfo';
-import { generateTourImage, getSingleTour } from 'apps/gptgenius/utils/action';
+} from '../../../../../components/TourInfo';
+import { generateTourImage, getSingleTour } from '../../../../../utils/action';
 import Image from 'next/image';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
