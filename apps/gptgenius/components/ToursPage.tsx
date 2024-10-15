@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { getAllTours } from '../utils/action';
 import ToursList from './ToursList';
 import { useState } from 'react';
+import { TourResponseObject } from './TourInfo';
 
 const ToursPage = () => {
   const [searchValue, setSearchValue] = useState('');
@@ -37,7 +38,7 @@ const ToursPage = () => {
       {isPending ? (
         <span className="loading"></span>
       ) : (
-        <ToursList data={data} />
+        <ToursList data={data as TourResponseObject[]} />
       )}
     </>
   );
