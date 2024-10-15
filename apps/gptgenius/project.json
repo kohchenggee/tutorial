@@ -13,7 +13,13 @@
       },
       "configurations": {
         "production": {}
-      }
+      },
+      "dependsOn": [
+        {
+          "target": "prisma-generate",
+          "projects": "self"
+        }
+      ]
     },
     "serve": {
       "executor": "@nx/next:server",
