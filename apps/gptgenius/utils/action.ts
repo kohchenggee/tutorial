@@ -5,7 +5,7 @@ import prisma from './db';
 import { revalidatePath } from 'next/cache';
 
 export type TourObject = { city: string; country: string };
-const openai = new OpenAI({ apiKey: process.env.OPENAI_KEY });
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 export const generateChatResponse = async (
   chatMessage: ChatCompletionMessage[]
