@@ -3,7 +3,7 @@ import {
   QueryClient,
   dehydrate,
 } from '@tanstack/react-query';
-import NewTour from 'apps/gptgenius/components/NewTour';
+import NewTour from '../../../../../components/NewTour';
 
 const NewTourPage = () => {
   const queryClient = new QueryClient();

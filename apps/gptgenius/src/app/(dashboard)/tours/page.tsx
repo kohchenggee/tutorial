@@ -3,8 +3,8 @@ import {
   QueryClient,
   dehydrate,
 } from '@tanstack/react-query';
-import ToursPage from 'apps/gptgenius/components/ToursPage';
-import { getAllTours } from 'apps/gptgenius/utils/action';
+import ToursPage from '../../../../components/ToursPage';
+import { getAllTours } from '../../../../utils/action';
 
 const AllToursPage = async () => {
   const queryClient = new QueryClient();
