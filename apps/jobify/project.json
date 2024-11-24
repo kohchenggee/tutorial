@@ -1,0 +1,41 @@
+{
+  "name": "jobify",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/jobify",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project jobify --web",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/jobify"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "options": {
+        "buildTarget": "jobify:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "jobify:build:production"
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {}
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/jobify/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
