@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tutorial/my-lib": ["my-lib/src/index.ts"]
+      "@tutorial/shared-lib": ["shared-lib/src/index.ts"],
+      "@tutorial/shared-lib/*": ["shared-lib/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

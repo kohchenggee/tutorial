@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@tutorial/shared-lib": ["shared-lib/src/index.ts"],
+            "@tutorial/shared-lib/*": ["shared-lib/src/*"]
+          }
+    }
+}
